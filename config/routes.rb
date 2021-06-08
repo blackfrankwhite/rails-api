@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   resource :users, only: [:create]
   post "/login", to: "users#login"
   post "/sign_up", to: "users#create"
+  post "/todo_items", to: "todo#create"
   get "/auto_login", to: "users#auto_login"
 end
